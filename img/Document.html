@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/strings.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+      <h1>Name</h1>
+      <button onclick="Name()">click</button>
+      <h1>subject</h1>
+      <button ondblclick="subject()">click</button>
+      <h1>marks</h1>
+    <button onmouseover="marks()">try it</button>
+      <h1>Hindi</h1>
+      <button onclick="Hindi()">click on</button>
+
+
+    <script>
+        // string
+
+        // '' , "" , `` 
+
+        // let info = "This is Javascript practice! javascript is a good langauge. javascript is used for front-end and javascript is used for back-end!"
+
+        // alert(info[0]) // indexing : 0
+        // alert(info.length) // 1
+
+        // alert(info.toLowerCase())
+        // alert(info.toUpperCase())
+
+
+        // javascript is a case-sensitive language
+        // alert(info.replace(/jAvaScrIpt/gi, "Python"))
+
+        // i => regexp (regular expression.) => that makes javascript case-insensitive!
+        // g => regexp => global
+
+
+        // trim : 
+
+        // let text = "            hello world                 "
+        // let trim_text = text.trim()
+        // alert(trim_text.length)
+
+        // trim method => is used to remove white space characters! mainly used in form validation!
+
+
+
+        // "" , '' , ``
+
+        // we can not use single quote inside single quote!
+        // let single = 'This is Rahul's laptop'
+
+        // let double = "This is Rahul's laptop!"
+
+
+        // backtick => string leterals, string templates, blueprint
+
+        // let name = prompt("Enter your name: ")
+        // let std = prompt("Enter your std: ")
+        // let details = `The name is ${name}. and I study in ${std} std`
+        // alert(details)
+
+        // With backtics, we can access the value of variables in a sentance!
+
+
+        // function : tolowercase, uppercase, trim, length, replace
+
+
+        // function lowercase(){
+        //     alert("working!")
+        //     let h1_value = document.getElementById('myid')
+        //     alert(h1_value)
+        //     h1_value.innerHTML = h1_value.innerHTML.toLowerCase() 
+        // }
+        // function uppercase(){
+        //     alert("hey")
+        // }
+
+        //  function x(){
+        //     // let h1_value = document.getElementById("komal")
+        //     alert(h1_value.innerHTML.length)
+        // }
+        // function name(){
+        //     let h1_value =document.getElementById("this is js")
+        //     alert(h1_value.innerHTML.length)
+        //     alert("komal")
+        // }
+        // function myid(){
+        //     let h1_value = Document.getElementById("myid")
+        //     alert(h1_value.innerHTML.replace)
+        // }
+        //  function myid(){
+        //     alert("js") 
+        //  }
+        //  function subject(){
+        //     alert("this is js")
+        //     let h1_value = document.getElementById("this is js") 
+        //  }
+        function Name(){
+            alert("Rahul")   
+        }
+        function subject(){
+            alert("maths")
+        }
+        function marks(){
+            alert("50")
+        }
+        function Hindi (){
+            alert(info.replace(/Hindi/gi, "english"));
+        }
+        
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
